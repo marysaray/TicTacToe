@@ -14,70 +14,24 @@ class MainActivity : AppCompatActivity() {
     private var currentPlayerX = true
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-/*        enableEdgeToEdge()*/
+        enableEdgeToEdge()
         setContentView(R.layout.activity_main )
-/*        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
-        }*/
-//        val playerX = "X"
-//        val playerO = "O"
+        }
 
-       // Top row on the left corner
-        val row1col1 = findViewById<Button>(R.id.row1col1Button)
-//        row1col1.setOnClickListener {
-//            row1col1.text = playerX
-//        }
+        val row1col1 = findViewById<Button>(R.id.row1col1Button) // Top row on the left corner
+        val row1col2 = findViewById<Button>(R.id.row1col2Button) // Top row in the middle
+        val row1col3 = findViewById<Button>(R.id.row1col3Button) // Top row on the right corner
+        val row2col1 = findViewById<Button>(R.id.row2col1Button) // Middle row on the left side
+        val row2col2 = findViewById<Button>(R.id.row2col2Button) // Middle row in the middle
+        val row2col3 = findViewById<Button>(R.id.row2col3Button) // Middle row on the right side
+        val row3col1 = findViewById<Button>(R.id.row3col1Button) // Bottom row on the left corner
+        val row3col2 = findViewById<Button>(R.id.row3col2Button) // Bottom row in the middle
+        val row3col3 = findViewById<Button>(R.id.row3col3Button) // Bottom row on the right corner
 
-        // Top row in the middle
-        val row1col2 = findViewById<Button>(R.id.row1col2Button)
-
-/*        row1col2.setOnClickListener {
-            row1col2.text = playerO
-        }*/
-
-        // Top row on the right corner
-       val row1col3 = findViewById<Button>(R.id.row1col3Button)
-/*        row1col3.setOnClickListener {
-            row1col3.text = playerO
-        }*/
-
-       // Middle row on the left side
-        val row2col1 = findViewById<Button>(R.id.row2col1Button)
-/*        row2col1.setOnClickListener {
-            row2col1.text = playerX
-        }*/
-
-        // Middle row in the middle
-        val row2col2 = findViewById<Button>(R.id.row2col2Button)
-/*        row2col2.setOnClickListener {
-            row2col2.text = playerX
-        }*/
-
-        // Middle row on the right side
-        val row2col3 = findViewById<Button>(R.id.row2col3Button)
-/*        row2col3.setOnClickListener {
-            row2col3.text = playerO
-        }*/
-
-        // Bottom row on the left corner
-        val row3col1 = findViewById<Button>(R.id.row3col1Button)
-/*        row3col1.setOnClickListener {
-            row3col1.text = playerO
-        }*/
-
-        // Bottom row in the middle
-       val row3col2 = findViewById<Button>(R.id.row3col2Button)
-/*        row3col2.setOnClickListener {
-            row3col2.text = playerO
-        }*/
-
-        // Bottom row on the right corner
-       val row3col3 = findViewById<Button>(R.id.row3col3Button)
-//        row3col3.setOnClickListener {
-//            row3col3.text = playerX
-//        }
         buttons = arrayOf(
               row1col1, row1col2, row1col3
             , row2col1, row2col2, row2col3
@@ -120,15 +74,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun playGame(buttonSelected: Button) {
+        val currentPlayer = findViewById<TextView>(R.id.displayTextId)
         if (buttonSelected.text.equals("")) {
             if (currentPlayerX) {
                 buttonSelected.text = "X"
                 currentPlayerX = false
+                currentPlayer.text = "Player O's turn"
             } else {
                 buttonSelected.text = "O"
                 currentPlayerX = true
+                currentPlayer.text = "Player X's turn"
             }
         }
     }
-    // check winner
 }
