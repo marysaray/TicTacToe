@@ -117,8 +117,8 @@ class MainActivity : AppCompatActivity() {
         }
         // Row 1 horizontal winner is Player O
         if (row1col1.text == playerO && row1col2.text == playerO && row1col3.text == playerO) {
-            "Player O won!!!".also { displayText.text = it }
-            if (displayText.text == "Player O won!!!") {
+            "WINNER: O !!!".also { displayText.text = it }
+            if (displayText.text == "WINNER: O !!!") {
                 for (buttons in button) {
                     buttons.isClickable = false
                 }
@@ -135,8 +135,8 @@ class MainActivity : AppCompatActivity() {
         }
         // Row 2 horizontal winner is Player O
         if (row2col1.text == playerO && row2col2.text == playerO && row2col3.text == playerO) {
-            "Player O won!!!".also { displayText.text = it }
-            if (displayText.text == "Player O won!!!") {
+            "WINNER: O !!!".also { displayText.text = it }
+            if (displayText.text == "WINNER: O !!!") {
                 for (buttons in button) {
                     buttons.isClickable = false
                 }
@@ -153,8 +153,8 @@ class MainActivity : AppCompatActivity() {
         }
         // Row 3 horizontal winner is Player O
         if (row3col1.text == playerO && row3col2.text == playerO && row3col3.text == playerO) {
-            "Player O won!!!".also { displayText.text = it }
-            if (displayText.text == "Player O won!!!") {
+            "WINNER: O !!!".also { displayText.text = it }
+            if (displayText.text == "WINNER: O !!!") {
                 for (buttons in button) {
                     buttons.isClickable = false
                 }
@@ -171,8 +171,8 @@ class MainActivity : AppCompatActivity() {
         }
         // Diagonal backward-slash winner is Player O
         if (row1col1.text == playerO && row2col2.text == playerO && row3col3.text == playerO) {
-            "Player O won!!!".also { displayText.text = it }
-            if (displayText.text == "Player O won!!!") {
+            "WINNER: O !!!".also { displayText.text = it }
+            if (displayText.text == "WINNER: O !!!") {
                 for (buttons in button) {
                     buttons.isClickable = false
                 }
@@ -189,8 +189,8 @@ class MainActivity : AppCompatActivity() {
         }
         // Diagonal forward-slash winner is Player O
         if (row1col3.text == playerO && row2col2.text == playerO && row3col1.text == playerO) {
-            "Player O won!!!".also { displayText.text = it }
-            if (displayText.text == "Player O won!!!") {
+            "WINNER: O !!!".also { displayText.text = it }
+            if (displayText.text == "WINNER: O !!!") {
                 for (buttons in button) {
                     buttons.isClickable = false
                 }
@@ -207,8 +207,8 @@ class MainActivity : AppCompatActivity() {
         }
         // Column 1 vertical winner is Player O
         if (row1col1.text == playerO && row2col1.text == playerO && row3col1.text == playerO) {
-            "Player O won!!!".also { displayText.text = it }
-            if (displayText.text == "Player O won!!!") {
+            "WINNER: O !!!".also { displayText.text = it }
+            if (displayText.text == "WINNER: O !!!") {
                 for (buttons in button) {
                     buttons.isClickable = false
                 }
@@ -225,8 +225,8 @@ class MainActivity : AppCompatActivity() {
         }
         // Column 2 vertical winner is Player O
         if (row1col2.text == playerO && row2col2.text == playerO && row3col2.text == playerO) {
-            "Player O won!!!".also { displayText.text = it }
-            if (displayText.text == "Player O won!!!") {
+            "WINNER: O !!!".also { displayText.text = it }
+            if (displayText.text == "WINNER: O !!!") {
                 for (buttons in button) {
                     buttons.isClickable = false
                 }
@@ -243,8 +243,8 @@ class MainActivity : AppCompatActivity() {
         }
         // Column 3 vertical winner is Player O
         if (row1col3.text == playerO && row2col3.text == playerO && row3col3.text == playerO) {
-            "Player O won!!!".also { displayText.text = it }
-            if (displayText.text == "Player O won!!!") {
+            "WINNER: O !!!".also { displayText.text = it }
+            if (displayText.text == "WINNER: O !!!") {
                 for (buttons in button) {
                     buttons.isClickable = false
                 }
