@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val displayText = findViewById<TextView>(R.id.displayTextId)
+        "Player X's turn".also { displayText.text = it }
         val row1col1 = findViewById<Button>(R.id.row1col1Button) // Top row on the left corner
         row1col1.setOnClickListener {
             btnClick(row1col1)
